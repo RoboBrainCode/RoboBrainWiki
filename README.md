@@ -34,8 +34,8 @@ RoboBrain Client API is a client developed purely in Python 2.X in order to prov
 In order to use the RoboBrain Client API, you need to install a few Python packages. Our client requires `boto` for s3 access, `request` for sending HTTP requests to the REST API and `filechunkio` for efficient file upload. They can be installed by using pip as
 
 `sudo pip install boto  
- sudo pip install requests  
- sudo pip install filechunkio`
+`sudo pip install requests  
+`sudo pip install filechunkio
 
 After the required packages are installed, cloning the github repo from [Client API - Github](https://github.com/RoboBrainCode/Client) would suffice. For installation problems and requesting an access to the private repo, please send an e-mail to the [robobrain@cs.stanford.edu](mailto:robobrain@cs.stanford.edu).
 
@@ -47,7 +47,7 @@ In order to access to the RoboBrain Client API, you need a RoboBrain account. Fo
 
 RoboBrain accepts information in terms of a json structure from its collaborators. Specifically, we use the following structure:
 
-```js
+```javascript
 {  
  "feedtype": "Type Of The Feed",  
  "text": "Text Caption of the Feed with HashTags",  
@@ -183,7 +183,7 @@ With this line, we include the Client API
 
 Please use the credentials you created for robobrain.me as your `RoboAPIUserName` and `RoboAPIPass`. You will receive the `S3KEY` and `S3SECRET` information in the e-mail confirming your contributor account.  
 
-`rC = RoboBrainAPI(RoboAPIUserName ,RoboAPIPass,S3KEY,S3SECRET,userHandle)`
+`rC = RoboBrainAPI(RoboAPIUserName ,RoboAPIPass,S3KEY,S3SECRET,userHandle)
 
 Here, we initialize the RobobrainAPI. Please note that at this point no connection with RoboBrain is made.
 
@@ -219,11 +219,11 @@ Use the credentials you created for robobrain.me as your `RoboAPIUserName` and `
 
 After editing the credentials, you can aggregate all feeds in the folder of the API. Each file should have an extension .json and it should correspond to a single feed. After collecting all the feeds in the same folder, you can use
 
-`python batchUpload.py`
+`python batchUpload.py
 
 or
 
-`python batchUploadforBigDataset.py`
+`python batchUploadforBigDataset.py
 
 At this stage, we push all the aggregated information to the RoboBrain. This script will return an HTTP response. If the data push is successful, you will recieve `HTTP 201:OK` response. If you receive any other response, please make sure
 
