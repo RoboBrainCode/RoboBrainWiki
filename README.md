@@ -15,8 +15,8 @@ For the technical report explaining the technical and algorithmic aspects of the
 	1.  [Installation](#api##install)
 	2.  [Client API Credentials](#api##client)
 	3.  [Information Structure for RoboBrain Interface](#api##information)
-	4.  [Using the RoboBrain Client API (In Your Own Code)](#api##using)
-	5.  [Using the RoboBrain Client API (As a Script)](#api##script)
+	4.  [Using the RoboBrain Client API (In Your Own Code)](#api##using-the-robobrain-client-api-in-your-own-code)
+	5.  [Using the RoboBrain Client API (As a Script)](#api##using-the-robobrain-client-api-as-a-script)
 
 *   **[RoboBrain Query API](RaQueL.md#welcome-to-RaQueL)**
 
