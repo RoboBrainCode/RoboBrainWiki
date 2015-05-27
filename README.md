@@ -176,10 +176,10 @@ For using the RoboBrain Client, we suggest new users to start with `generateFeed
 
 With this line, we include the Client API
 
-RoboAPIUserName = 'YOUR_USER_NAME'  
- RoboAPIPass = 'YOUR_PASSWORD'  
- S3KEY = 'S3_KEY'  
- S3SECRET = 'S3_SECRET'
+`RoboAPIUserName = 'YOUR_USER_NAME'  
+ `RoboAPIPass = 'YOUR_PASSWORD'  
+ `S3KEY = 'S3_KEY'  
+ `S3SECRET = 'S3_SECRET'
 
 Please use the credentials you created for robobrain.me as your `RoboAPIUserName` and `RoboAPIPass`. You will receive the `S3KEY` and `S3SECRET` information in the e-mail confirming your contributor account.  
 
