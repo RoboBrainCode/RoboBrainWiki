@@ -1,9 +1,9 @@
 ###Pattern(currently supported)
 `fetch("({handle:'wall'})-[]->(v)")`</br>
-`fetch("({handle:'wall'})-[:CAN_USE]->(v)")`
-`fetch("(v)-[]->({handle:'metal'})")`
-`fetch("(v)-[:CAN_USE]->({handle:'metal'})")`
-`fetch("({handle:'wall'})-[e]->({handle:'metal'})")`
-`fetch("({handle:'standing_human'})-[e*1..4]->({handle:'phone'})")`
-`fetch("({handle:'standing_human'})-[*1..4]->(v)")`
-`fetch("(v)-[*1..4]->({handle:'standing_human'})")`
+`fetch("({handle:'wall'})-[:CAN_USE]->(v)")`</br>
+`fetch("(v)-[]->({handle:'metal'})")`</br>
+`fetch("(v)-[:CAN_USE]->({handle:'metal'})")`</br>
+`fetch("({handle:'wall'})-[e]->({handle:'metal'})")`</br>
+`fetch("({handle:'standing_human'})-[e*1..4]->({handle:'phone'})")`</br>
+`fetch("({handle:'standing_human'})-[*1..4]->(v)")`</br>
+`fetch("(v)-[*1..4]->({handle:'standing_human'})")`</br>
