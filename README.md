@@ -18,7 +18,7 @@ For the technical report explaining the technical and algorithmic aspects of the
 	4.  [Using the RoboBrain Client API (In Your Own Code)](#api##using)
 	5.  [Using the RoboBrain Client API (As a Script)](#api##script)
 
-*   **[RoboBrain Query API](#index##welcome-to-raquel)**
+*   **[RoboBrain Query API]((#RaQueL#welcome-to-RaQueL))**
 
 ### RoboBrain Client API
 
@@ -236,5 +236,5 @@ If your answer is Yes to all aforementioned questions and still not receiving `H
 
 ## RoboBrain Query API
 
-RoboBrain introduces **RaQueL** (RoboBrain Query library) for querying the RoboBrain Engine. RaQueL is a combination of powerful functional programming concept with [CyPher graph query language](http://neo4j.com/docs/stable/cypher-query-lang.html) allowing us to build applications using RoboBrain.
+RoboBrain introduces [**RaQueL**](#RaQueL#welcome-to-RaQueL) (RoboBrain Query library) for querying the RoboBrain Engine. RaQueL is a combination of powerful functional programming concept with [CyPher graph query language](http://neo4j.com/docs/stable/cypher-query-lang.html) allowing us to build applications using RoboBrain.
 
