@@ -8,7 +8,7 @@ RoboBrain graph.</p>
 
 ## Commands
 
-* `fetch(Pattern)` - For querying a user specified pattern in RoboBrain graph.
+* `fetch(Pattern)` - For querying a user specified pattern in RoboBrain graph. For more on [Pattern](Pattern.md)
 * `SortBy(list, property)` - To sort the given list of nodes or relationships according to a given property(currently supported on for 'belief' property).
 * `map` - Evaluates a lazy map on a list of nodes or relationships specified.
 * `filter` - Evaluates a lazy map on a list of nodes or relationships specified.
