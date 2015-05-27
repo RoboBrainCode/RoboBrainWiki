@@ -187,8 +187,8 @@ Please use the credentials you created for robobrain.me as your `RoboAPIUserName
 
 Here, we initialize the RobobrainAPI. Please note that at this point no connection with RoboBrain is made.
 
-`for result in YourResults:
-`rC.addFeed(data)
+	for result in YourResults:
+	rC.addFeed(data)
 
 Here, you add feeds to the RoboBrain class by crawling through your own experimental results. Please read the formatting instructions in [Information Structure](wiki/Information%20Structure%20for%20RoboBrain%20Interface) before implementing your code. Please also note that, there is still no request is made to the RoboBrain and all information are stored in the memory. If you are pushing large amount of information, this approach can cause a problem. Hence, if you are pushing a large amount of information, please call the `rC.push2Brain()` function before you reach the memory limit of your system.
 
