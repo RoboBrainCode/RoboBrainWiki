@@ -33,9 +33,9 @@ RoboBrain Client API is a client developed purely in Python 2.X in order to prov
 
 In order to use the RoboBrain Client API, you need to install a few Python packages. Our client requires `boto` for s3 access, `request` for sending HTTP requests to the REST API and `filechunkio` for efficient file upload. They can be installed by using pip as
 
-`sudo pip install boto  
-`sudo pip install requests  
-`sudo pip install filechunkio
+	sudo pip install boto  
+	sudo pip install requests  
+	sudo pip install filechunkio
 
 After the required packages are installed, cloning the github repo from [Client API - Github](https://github.com/RoboBrainCode/Client) would suffice. For installation problems and requesting an access to the private repo, please send an e-mail to the [robobrain@cs.stanford.edu](mailto:robobrain@cs.stanford.edu).
 
@@ -183,7 +183,7 @@ With this line, we include the Client API
 
 Please use the credentials you created for robobrain.me as your `RoboAPIUserName` and `RoboAPIPass`. You will receive the `S3KEY` and `S3SECRET` information in the e-mail confirming your contributor account.  
 
-`rC = RoboBrainAPI(RoboAPIUserName ,RoboAPIPass,S3KEY,S3SECRET,userHandle)
+	rC = RoboBrainAPI(RoboAPIUserName ,RoboAPIPass,S3KEY,S3SECRET,userHandle)
 
 Here, we initialize the RobobrainAPI. Please note that at this point no connection with RoboBrain is made.
 
@@ -192,8 +192,8 @@ Here, we initialize the RobobrainAPI. Please note that at this point no connecti
 
 Here, you add feeds to the RoboBrain class by crawling through your own experimental results. Please read the formatting instructions in [Information Structure](wiki/Information%20Structure%20for%20RoboBrain%20Interface) before implementing your code. Please also note that, there is still no request is made to the RoboBrain and all information are stored in the memory. If you are pushing large amount of information, this approach can cause a problem. Hence, if you are pushing a large amount of information, please call the `rC.push2Brain()` function before you reach the memory limit of your system.
 
-`URL = "http://robobrain.me:3000/api/feeds/"  
-`rC.push2Brain(URL)
+	URL = "http://robobrain.me:3000/api/feeds/"  
+	rC.push2Brain(URL)
 
 At this stage, we push all the aggregated information to the RoboBrain. This function will return an HTTP response. If the data push is successful, you will recieve `HTTP 201:OK` response. If you receive any other response, please make sure
 
@@ -210,20 +210,20 @@ You can also use RoboBrain Client API as a script to upload all feeds in the cur
 
 Before using the script, please change the following lines:
 
-RoboAPIUserName = 'YOUR_USER_NAME'  
- RoboAPIPass = 'YOUR_PASSWORD'  
- S3KEY = 'S3_KEY'  
- S3SECRET = 'S3_SECRET'
+	RoboAPIUserName = 'YOUR_USER_NAME'  
+	RoboAPIPass = 'YOUR_PASSWORD'  
+ 	S3KEY = 'S3_KEY'  
+ 	S3SECRET = 'S3_SECRET'
 
 Use the credentials you created for robobrain.me as your `RoboAPIUserName` and `RoboAPIPass`. You will receive the `S3KEY` and `S3SECRET` information in the e-mail confirming your contributor account.
 
 After editing the credentials, you can aggregate all feeds in the folder of the API. Each file should have an extension .json and it should correspond to a single feed. After collecting all the feeds in the same folder, you can use
 
-`python batchUpload.py
+`python batchUpload.py`
 
 or
 
-`python batchUploadforBigDataset.py
+`python batchUploadforBigDataset.py`
 
 At this stage, we push all the aggregated information to the RoboBrain. This script will return an HTTP response. If the data push is successful, you will recieve `HTTP 201:OK` response. If you receive any other response, please make sure
 
