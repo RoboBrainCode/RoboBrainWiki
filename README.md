@@ -18,7 +18,7 @@ For the technical report explaining the technical and algorithmic aspects of the
 	4.  [Using the RoboBrain Client API (In Your Own Code)](#api##using)
 	5.  [Using the RoboBrain Client API (As a Script)](#api##script)
 
-*   **[RoboBrain Query API](#RaQueL.md#welcome-to-RaQueL)**
+*   **[RoboBrain Query API](RaQueL.md#welcome-to-RaQueL)**
 
 ### RoboBrain Client API
 
